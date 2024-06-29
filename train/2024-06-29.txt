@@ -1,0 +1,19 @@
+dataset/
+|-- train/
+|   |-- cats/
+|   |   |-- cat001.jpg
+|   |   |-- cat002.jpg
+|   |   `-- ...
+|   `-- dogs/
+|       |-- dog001.jpg
+|       |-- dog002.jpg
+|       `-- ...
+`-- val/
+    |-- cats/
+    |   |-- cat101.jpg
+    |   |-- cat102.jpg
+    |   `-- ...
+    `-- dogs/
+        |-- dog101.jpg
+        |-- dog102.jpg
+        `-- ...
