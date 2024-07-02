@@ -1,0 +1,42 @@
+
+When using an image dataset for supervised learning, it’s essential to have appropriate labels for each image. Here are the primary formats for image labels:
+
+Category Labels (Classification):
+
+Integer Labels: Each category is represented by an integer (e.g., MNIST dataset labels digits from 0 to 9).
+String Labels: Each category is represented by a string (e.g., CIFAR-10 dataset labels include "cat," "dog," "car," etc.).
+One-Hot Encoding: Each category is represented by a vector with a length equal to the number of categories. For example, in a three-category problem ("cat," "dog," "car"), "cat" can be represented as [1, 0, 0].
+Multi-Label Classification: Each image can have multiple labels, represented by multiple binary values or vectors.
+
+Regression: Labels are continuous values, such as the size or age of an object in the image.
+
+Segmentation: Labels are mask images the same size as the original image, with each pixel value representing a category.
+
+Detection: Labels include bounding box coordinates and categories, such as (x, y, width, height).
+
+File Formats for Labels
+CSV File: Often used to store the correspondence between image filenames and labels. For example:
+
+filename,label
+img1.jpg,0
+img2.jpg,1
+img3.jpg,2
+JSON File: Useful for complex label structures like multi-label or detection tasks. For example:
+
+{"images": [{"filename": "img1.jpg", "label": 0}, {"filename": "img2.jpg", "label": 1}, {"filename": "img3.jpg", "label": [1, 0, 0]}]}
+Directory Structure: For simple classification tasks, using directory names as labels. For example:
+
+dataset/
+cat/
+img1.jpg
+img2.jpg
+dog/
+img3.jpg
+img4.jpg
+Choose the label format that best suits the specific task and dataset requirements to ensure accurate and efficient representation of the target information in the images.
+
+
+
+
+
+
